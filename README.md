@@ -1,2 +1,2 @@
-# Portfolio
-Private folder for portfolio pieces.
+# Rachael West Portfolio
+
