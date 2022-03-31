@@ -1,197 +1,267 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
+<!DOCTYPE html>
+
 <html>
-	<head>
-		<title>Rachael West Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rachael West Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e294c908bb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+<!--NAVIGATION-->        
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<!--HEADER SECTION-->
+    <header>
+        <section id="welcome" class="welcome-section">
+            <div class="header-img-container">
+                <img src="images\Rachael West(cropped).jpg" alt="a picture of Rachael West"/>
+            </div>
+            <div class="header-desc">
+                <h1 class="page-header">Hi, I'm Rachael</h1>
+                <p class="small-intro">A frontend web developer passionate about creating dynamic and user-friendly experiences online.</p>
+                
+                <div class="resume-and-social">
+                    <a class="btn" href="#" alt="Rachael West's résumé" target="_blank">Résumé</a>  
+                    <ul class="social-icons-list">
+                        <li><a href="https://www.linkedin.com/in/rachael-west-6b240724/" class="fa-brands fa-linkedin-in"></a></li>
+                        <li><a href="https://github.com/RachaelWest" class="fa-brands fa-github"></a></li>
+                        <li><a href="mailto:contact.rachaelwest@gmail.com" class="fa-solid fa-envelope"></a></li>
+                    </ul>                        
+                </div>
+            </div>
+        </section>
+    </header>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>My Portfolio</h1>
-						<p>A showcase of my projects and skills.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <main>
+<!--ABOUT SECTION-->
+        <section id="about" class="about-section">
+            <h2 class="section-header">About Me</h2>
+            <article class="about-info section-container">
+                <p>
+                    I'm a self-taught front-end developer based in the United Kingdom who loves to learn and work with creative colleagues.
+                </p>
+                <p>
+                    In 2019 I decided to change careers and have since completed various online courses about responsive web design, coding langauges, and front-end development.
+                </p>
+                <p>
+                    My past roles involved writing content for digital products, including websites, and now I want to build the products themselves.
+                </p>
+      
+                <a class="btn" href="about.html" target="_blank">Read More</a>       
+                
+            </article>
+        </section>
 
-				<!-- Header 
-					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
-					</header>
-				-->
+<!--SKILLS SECTION-->
+        <section id="skills" class="skills-section">
+            <h2 class="section-header">My Skills</h2>
+            <div class="skills-container section-container">            
+                <div class="skills-grid">
+                    <div class="card">
+                        <img src="images/skill logos/html 5.jpg" alt="html5">
+                        <p>HTML</p>
+                    </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Homepage</a></li>
-							<li><a href="about_me.html">About Me</a></li>
-							<!--<li><a href="projects.html">Projects</a></li> 
-							<li><a href="contact.html">Contact</a></li>-->
-						</ul>
-						<ul class="icons">
-							<li><a href="mailto:contact.rachaelwest@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://www.linkedin.com/in/rachael-west-6b240724/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/RachaelWest" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-					
+                    <div class="card">
+                        <img src="images/skill logos/css 3.jpg" alt="css3">
+                        <p>CSS</p>
+                    </div>
 
-				<!-- Main -->
-					<div id="main">
+                    <div class="card">
+                        <img src="images/skill logos/javascript.jpg" alt="javascript">
+                        <p>JavaScript</p>
+                    </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h1>My name is Rachael West</h1>
-									<p>I am a passionate front-end developer looking for my next challenge. You can find some of my own projects below. </p>
-								</header>
-								<a href="about_me.html" class="image main"><img src="images/Rachael West.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="about_me.html" class="button large">About Me</a></li>
-								</ul>
-							</article>
+                    <div class="card">
+                        <img src="images/skill logos/vscode.png" alt="visual studio code">
+                        <p>VS Code</p>
+                    </div>     
 
-						<!-- Posts -->
-							
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Image Carousel<br /></h2>
-									</header>
-									<a href="https://rachaelwest.github.io/image_carousel/" class="image fit"><img src="images/projects/image carousel.jpg" alt="image carousel example" /></a>
-									<p>An image carousel designed to scroll automatically or allow a user to scroll manually.</p>
-									<ul class="actions special">
-										<li><a href="https://rachaelwest.github.io/image_carousel/" class="button">View project</a></li>
-										<li><a href="https://github.com/RachaelWest/image_carousel" class="button">View code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>Countdown Clock<br /></h2>
-									</header>
-									<a href="https://rachaelwest.github.io/countdown_clock/" class="image fit"><img src="images/projects/countdown clock.jpg" alt="countdown clock" /></a>
-									<p>A clock designed to count down to the day of first contact as depicted in Star Trek.</p>
-									<ul class="actions special">
-										<li><a href="https://rachaelwest.github.io/countdown_clock/" class="button">View project</a></li>
-										<li><a href="https://github.com/RachaelWest/countdown_clock" class="button">View code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>Quiz example<br /></h2>
-									</header>
-									<a href="https://rachaelwest.github.io/my_quiz/" class="image fit"><img src="images/projects/quiz example.jpg" alt="quiz" /></a>
-									<p>A quiz that allows users to select answers, submit them to see their score, and view correct/incorrect answers.</p>
-									<ul class="actions special">
-										<li><a href="https://rachaelwest.github.io/my_quiz/" class="button">View project</a></li>
-										<li><a href="https://github.com/RachaelWest/my_quiz" class="button">View code</a></li>
-									</ul>
-								</article>		
-								<article>							
-									<header>
-										<h2>Circle Area Calculator<br /></h2>
-									</header>
-									<a href="https://rachaelwest.github.io/circle_area_calculator/" class="image fit"><img src="images/projects/circle area calulator.jpg" alt="circle area calculator" /></a>
-									<p>A calculator designed to calculate the area of a circle based on the radius value entered by the user.</p>
-									<ul class="actions special">
-										<li><a href="https://rachaelwest.github.io/circle_area_calculator/" class="button">View project</a></li>
-										<li><a href="https://github.com/RachaelWest/circle_area_calculator" class="button">View code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>Quote Generator<br /></h2>
-									</header>
-										<a href="https://rachaelwest.github.io/quote_generator/" class="image fit"><img src="images/projects/quote generator.jpg" alt="quote generator" /></a>
-										<p>A generator that allows a user to click a button and read a random inspirational quote.</p>
-										<ul class="actions special">
-											<li><a href="https://rachaelwest.github.io/quote_generator/" class="button">View project</a></li>
-											<li><a href="https://github.com/RachaelWest/quote_generator" class="button">View code</a></li>
-										</ul>
-									</article>
-								<article>
-									<header>
-										<h2>Simple Calculator<br /></h2>
-									</header>
-									<a href="https://rachaelwest.github.io/simple_calculator/" class="image fit"><img src="images/projects/simple calculator.jpg" alt="calculator" /></a>
-									<p>A calculator that will either add, subtract, multiply, or divide two numbers and display the result.</p>
-									<ul class="actions special">
-										<li><a href="https://rachaelwest.github.io/simple_calculator/" class="button">View project</a></li>
-										<li><a href="https://github.com/RachaelWest/simple_calculator" class="button">View code</a></li>
-									</ul>
-								</article>
-								<!--blank project templates for home page
+                    <div class="card">
+                        <img src="images/skill logos/github.jpg" alt="github">
+                        <p>GitHub</p>
+                    </div>
 
-								<article>
-									<header>
-										<h2><a href="#">Project 5<br />
-										[project name]</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>A [type of project] designed to allow a user to [what it achieves]. Click the image to view the end product.</p>
-										<li><a href="#" class="button">View code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 6<br />
-										[project name]</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>A [type of project] designed to allow a user to [what it achieves]. Click the image to view the end product.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View code</a></li>
-									</ul>
-								</article>
-								-->
-							</section>
 
-					</div>
+                    <div class="card">
+                        <img src="images/skill logos/git.jpg" alt="git">
+                        <p>Git</p>
+                    </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:contact.rachaelwest@gmail.com">contact.rachaelwest@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/rachael-west-6b240724/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/RachaelWest" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+                    <div class="card">
+                        <img src="images/skill logos/seo.png" alt="search engine optimisation">
+                        <p>SEO</p>
+                    </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
 
-			</div>
+                    <div class="card">
+                        <img src="images/skill logos/windows.png" alt="">
+                        <p>Windows</p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="images/skill logos/microsoft365.png" alt="">
+                        <p>Microsoft</p>
+                    </div>
+            </div>
+        </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!--PROJECTS SECTION-->
+        <section id="projects" class="projects-section">
+            <h2 class="section-header">Projects</h2>
+            <div class="projects-container section-container">   
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/countdown clock.jpg" alt="countdown clock">
+                    </div>
+                    <div class="project-desc">
+                        <h3>Countdown Clock</h3>
+                        <h4>Skills used: HTML5, CSS3, JavaScript</h4>
+                        <p class="project-details">A clock designed to count down to the day of first contact as depicted in Star Trek.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/countdown_clock/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/countdown_clock" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
 
-	</body>
-</html>
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/image carousel.jpg" alt="image carousel">
+                    </div>
+                    <div class="project-desc">
+                        <h3>Image Carousel</h3>
+                        <h4>Skills used: HTML5, CSS3, JavaScript</h4>
+                        <p class="project-details">An image carousel designed to scroll automatically or allow a user to scroll manually.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/image_carousel/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/image_carousel" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/circle area calulator.jpg" alt="cirle area calculator">
+                    </div>
+                    <div class="project-desc">
+                        <h3>Circle Area Calculator</h3>
+                        <h4>Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A calculator designed to calculate the area of a circle based on the radius value entered by the user.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/circle_area_calculator/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/circle_area_calculator" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/quote generator.jpg" alt="quote generator">
+                    </div>
+                    <div class="project-desc">
+                        <h3>Quote Generator</h3>
+                        <h4>Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A generator that allows a user to click a button and read a random inspirational quote.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/quote_generator/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/quote_generator" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/quiz example.jpg" alt="quiz example">
+                    </div>
+                    <div class="project-desc">
+                        <h3>Quiz Example</h3>
+                        <h4>Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A quiz that allows users to select answers, submit them to see their score, and view correct/incorrect answers.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/my_quiz/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/my_quiz" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/simple calculator.jpg" alt="simple calculator">
+                    </div>
+                    <div class="project-desc">
+                        <h3>Simple Calculator</h3>
+                        <h4>Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A calculator that will either add, subtract, multiply, or divide two numbers and display the result.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/simple_calculator/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/simple_calculator" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <a class="btn" href="projects.html" target="_blank">Show All</a>                
+            </div>
+        </section>
+
+
+
+<!--CONTACT SECTION-->
+        <section id="contact" class="contact-section">
+            <h2 class="section-header">Contact</h2>
+            <div class="contact-container section-container"> 
+                <h3>Get in touch...</h3>
+
+                
+                <div class="contact-links">
+                    <div class="contact-box">
+                        <a href="mailto:contact.rachaelwest@gmail.com" target="_blank">
+                            contact.rachaelwest@gmail.com
+                        </a>                          
+                    </div>
+                    
+                </div>
+
+           <!--
+                    <div class="contact-box">
+                    <a href="https://www.linkedin.com/in/rachael-west-6b240724/" target="_blank" class="contact-details">
+                    </i> LinkedIn
+                    </a>
+                </div>
+
+                <form action="https://formsubmit.co/contact.rachaelwest@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio enquiry">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="hidden" name="_next" value="thankyou.html">
+                    <input type="text" name="message" placeholder="Your message..." required>
+                    <button type="submit">Send</button>
+               </form>
+
+
+           -->
+
+
+        </section>
+
+    </main>
+
+<!--FOOTER SECTION-->
+<footer>
+    <p>Created by Rachael West</p>
+</footer>
