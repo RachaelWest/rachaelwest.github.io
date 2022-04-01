@@ -51,6 +51,45 @@ ul {
    text-decoration: underline;
 }
 
+
+/* MOBILE NAVIGATION */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: var(--main-teal);
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: var(--main-teal);
+    color: var(--main-box-white);
+  }
+
+
 /* BUTTONS */
 .btn{
     background-color: var(--main-teal);
@@ -190,7 +229,6 @@ section {
 }
 
 
-
 /*PROJECTS SECTION */
 .project {
     display: flex;
@@ -200,7 +238,6 @@ section {
     border: 1px solid #000;
     margin-bottom: 25px;
     word-break: break-word;
-    
 }
 
 .project:first-child {
@@ -241,28 +278,16 @@ section {
     font-size: 1.25rem;
     margin-right: 50px;
     word-break: normal;
-
 }
 
 .project-links a:hover {
-    background-color: var(--main-lightgreen);
-    
+    background-color: var(--main-lightgreen); 
 }
 
 
 /* SHOW ALL BUTTON */
-.btn-show-all {
-    font-size: 1.5rem;
-    background-color: var(--main-teal);
-    padding: 1rem 2rem;
-    border-radius: 15px;
-    margin: auto;
-    text-align: center;
-    
-}
-
-.btn-show-all:hover {
-    background-color: var(--main-lightgreen);
+.show-all-btn {
+    margin: 0 38%;
 }
 
 
@@ -270,27 +295,17 @@ section {
 .contact-box {
     display: flex;
     padding: 30px;
-    
     margin-bottom: 25px;
-    width: 50%;
+    width: 100%;
 }
 
 .contact-box a {
     color: #000;
     word-break: break-word;
-    
 }
 
 .contact-box:hover {
     background-color: var(--main-lightgreen);
-}
-
-
-/*
-.contact-details {
-    font-size: 2rem;
-    color: #000;
-   display: inline-flex;
 }
 
 
@@ -311,6 +326,15 @@ footer {
         margin: auto;
     }
 
+    .section-container, .project-desc, .project-details, .project-links a, .btn {
+        font-size: 1rem;  
+        word-break: break-word;
+    }
+
+    .small-intro {
+        font-size: 1.5rem;
+    }
+
     .resume-and-social {
         display: flex;
         flex-direction: column;
@@ -323,7 +347,6 @@ footer {
 
     nav {
         visibility: hidden;
-        
     }
 
     .topnav {
@@ -335,7 +358,6 @@ footer {
         display: flex;
         flex-direction: column;
         word-break: break-word;
-        
     }
 
     .project-img img {
@@ -343,46 +365,14 @@ footer {
         width: 200%;
     }
 
+    .project-desc h3, .project-desc h4, .project-desc p {
+        width: 250px;
+    }
+
     .project-links {
         display: flex;
         flex-direction: column;
+        width: 250px;
     }
-
 }
 
-/* MOBILE NAVIGATION */
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: var(--main-teal);
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: var(--main-teal);
-    color: var(--main-box-white);
-  }
