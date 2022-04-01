@@ -285,12 +285,6 @@ section {
 }
 
 
-/* SHOW ALL BUTTON */
-.show-all-btn {
-    margin: 0 38%;
-}
-
-
 /*CONTACT SECTION */
 .contact-box {
     display: flex;
@@ -355,9 +349,9 @@ footer {
     }
 
     .project {
-        display: flex;
-        flex-direction: column;
+        display: block;
         word-break: break-word;
+        padding: 15px;
     }
 
     .project-img img {
@@ -366,7 +360,8 @@ footer {
     }
 
     .project-desc h3, .project-desc h4, .project-desc p {
-        width: 250px;
+        width: 150%;
+        word-wrap: break-word;
     }
 
     .project-links {
