@@ -331,6 +331,23 @@ footer {
         position: fixed;
     }
 
+    .project {
+        display: flex;
+        flex-direction: column;
+        word-break: break-word;
+        
+    }
+
+    .project-img img {
+        display: flex;
+        width: 200%;
+    }
+
+    .project-links {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 /* MOBILE NAVIGATION */

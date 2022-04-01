@@ -14,7 +14,35 @@
         <script src="https://kit.fontawesome.com/e294c908bb.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        
+
+<!--MOBILE NAVIGATION-->    
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+<div class="topnav">
+<a href="#home" class="active">Menu</a>
+<!-- Navigation links (hidden by default) -->
+<div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#learning">Learning</a>
+    <a href="#story">My Story</a>
+    <a href="#interests">Interests</a>
+</div>
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+</div>
+
 <!--NAVIGATION-->        
     <nav id="navbar" class="nav">
         <ul class="nav-list">
