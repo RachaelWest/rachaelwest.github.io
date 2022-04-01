@@ -57,7 +57,7 @@ ul {
 .topnav {
     overflow: hidden;
     background-color: var(--main-teal);
-    position: relative;
+    position: fixed;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -76,17 +76,20 @@ ul {
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: black;
+    background-color: var(--main-teal);
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+   
   }
   
   /* Style the active link (or home/logo) */
   .active {
     background-color: var(--main-teal);
     color: var(--main-box-white);
+    width: 100px;
+    
   }
 
 
@@ -283,6 +286,7 @@ section {
 .project-links a:hover {
     background-color: var(--main-lightgreen); 
 }
+
 
 
 /*CONTACT SECTION */
