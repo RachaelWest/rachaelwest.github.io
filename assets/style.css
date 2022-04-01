@@ -373,5 +373,10 @@ footer {
         flex-direction: column;
         width: 250px;
     }
+
+    .contact-box {
+        display: block;
+        padding: 2px;
+    }
 }
 
