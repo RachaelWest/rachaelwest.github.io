@@ -22,6 +22,11 @@ ul {
     list-style: none;
 }
 
+/* SUB PAGES - ADD TO ALL PAGES TO BUMP CONTENT DOWN UNDER FIXED NAV */
+.sub-page {
+    margin-top: 200px;
+}
+
 
 /* NAVIGATION */
 .nav {
@@ -38,13 +43,13 @@ ul {
 
 .nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 2em;
 }
 
 .nav-list a {
     display: block;
     font-size: 2rem;
-    padding: 2rem;
+    padding: 1em;
 }
 
 .nav-list a:hover {
@@ -68,9 +73,9 @@ ul {
   /* Style navigation menu links */
   .topnav a {
     color: white;
-    padding: 14px 16px;
+    padding: 0.875em 1em;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.0625rem;
     display: block;
   }
   
@@ -94,16 +99,19 @@ ul {
 
 
 /* BUTTONS */
-.btn{
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
     background-color: var(--main-teal);
     color: var(--main-white);
-    padding: 15px 35px;
+    padding: 1em 1.5em;
     border-radius: 40px;
     font-size: 1.25rem;
     font-weight: 300;
-    display: inline-block;
-    vertical-align: baseline;
-    margin: 20px 50px;
 }
 
 .btn:hover {
@@ -113,12 +121,11 @@ ul {
 
 /* ALL SECTIONS */
 section {
-    padding: 80px 0;
-    display: block;
+    margin-bottom: 2em;
 }
 
 .section-container {
-    padding: 20px 50px;
+    padding: 1.25em 3.125em;
     background-color: var(--main-box-white);
     border-radius: 40px;
     max-width: 60%;
@@ -133,7 +140,7 @@ section {
     font-size: 2rem;
     display: block;   
     max-width: 640px;
-    margin: 10px 200px;
+    margin: 0.625em 200px;
 }
 
 
@@ -163,49 +170,40 @@ section {
     font-style: italic;
 }
 
+
 .resume-and-social {
     display: flex;
-    margin-top: 20px;
-    vertical-align: baseline;
-    justify-content: center;
+    flex-direction: column;
 }
 
-
-.social-icons-list {
+.social-icons {
     display: flex;
-    margin: 20px 50px;
+    justify-content: center;
+    margin: 10px;
 }
 
-.social-icons-list li a {
-    padding: 10px 10px;
-    background-color: var(--main-box-white);
-    border-radius: 50px;
+
+.social-icons a {
     color: var(--main-teal);
     border: 1px solid #EEE;
-    display: inline-block;
-    margin: auto;
-  
+    padding: 10px 10px;
+    margin-right: 5px;
+    border-radius: 50px;
 }
 
-.social-icons-list li a:hover {
+.social-icons a:hover {
     background-color: var(--main-lightgreen);
 }
 
 
 /* SKILLS SECTION */
-.skills-container {
-    text-align: center;
-    font-size: 0.5rem;
-}
-
-  .skills-grid {
+.skills-grid {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
     justify-items: center;
-    
 }
 
   .card {
@@ -235,7 +233,7 @@ section {
 /*PROJECTS SECTION */
 .project {
     display: flex;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 14px 28px rgb(134 151 168);
     border: 1px solid #000;
@@ -243,25 +241,29 @@ section {
     word-break: break-word;
 }
 
-.project:first-child {
-    margin-top: 0;
-}
-
 .project-img {
     width: 50%;
     border-radius: 10px;
-    height: auto;
+    display: flex;
+    align-items: center;
 }
 
 .project-img img {
     width: 100%;
-    vertical-align: middle;
     border-radius: 10px;
 }
 
 .project-desc {
     width: 50%;
     margin-left: 40px;
+}
+
+.project-title {
+    margin-top: 0;
+}
+
+.project-skills {
+    font-size: 1.25rem;
 }
 
 .project-details {
@@ -286,7 +288,6 @@ section {
 .project-links a:hover {
     background-color: var(--main-lightgreen); 
 }
-
 
 
 /*CONTACT SECTION */
@@ -320,12 +321,17 @@ footer {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 900px) {
+
+    .sub-page {
+        margin-top: 0;
+    }
+
     .section-header {
         margin: auto;
     }
 
     .section-container, .project-desc, .project-details, .project-links a, .btn {
-        font-size: 1rem;  
+        font-size: 1.2rem;  
         word-break: break-word;
     }
 
@@ -361,6 +367,7 @@ footer {
     .project-img img {
         display: flex;
         width: 200%;
+        margin-bottom: 15px;
     }
 
     .project-desc h3, .project-desc h4, .project-desc p {

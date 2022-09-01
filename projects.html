@@ -9,12 +9,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/style.css">
     </head>
-    <body>
-        
-<!--NAVIGATION-->        
+
+<body>
+    <!--MOBILE NAVIGATION-->    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="topnav">
+    <a href="#home" class="active">Menu</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mailto:contact.rachaelwest@gmail.com">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+
+    <!--NAVIGATION-->        
     <nav id="navbar" class="nav">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto:contact.rachaelwest@gmail.com">Contact</a></li>
         </ul>
     </nav>
 
@@ -22,16 +50,73 @@
     <br>
     <br>
 
+    </main>
+        <section id="projects" class="projects-section sub-page">
+            <h2 class="section-header">Other Projects</h2>
+            <div class="projects-container section-container">  
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/circle area calulator.jpg" alt="cirle area calculator">
+                    </div>
+                    <div class="project-desc">
+                        <h3 class="project-title">Circle Area Calculator</h3>
+                        <h4 class="project-skills">Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A calculator designed to calculate the area of a circle based on the radius value entered by the user.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/circle-area-calculator/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/circle-area-calculator" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
 
-        <section id="" class="project-section">
-            <h2 class="section-header">All projects</h2>
-            <article class="about-info section-container">
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/quote generator.jpg" alt="quote generator">
+                    </div>
+                    <div class="project-desc">
+                        <h3 class="project-title">Quote Generator</h3>
+                        <h4 class="project-skills">Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A generator that allows a user to click a button and read a random inspirational quote.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/quote-generator/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/quote-generator" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
 
-                <h1>More projects coming soon...</h1>
-                
-            </article>
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/quiz example.jpg" alt="quiz example">
+                    </div>
+                    <div class="project-desc">
+                        <h3 class="project-title">Quiz Example</h3>
+                        <h4 class="project-skills">Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A quiz that allows users to select answers, submit them to see their score, and view correct/incorrect answers.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/my-quiz/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/my-quiz" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project">
+                    <div class="project-img">
+                        <img src="images/projects/simple calculator.jpg" alt="simple calculator">
+                    </div>
+                    <div class="project-desc">
+                        <h3 class="project-title">Simple Calculator</h3>
+                        <h4 class="project-skills">Skills used: HTML, CSS, JavaScript</h4>
+                        <p class="project-details">A calculator that will either add, subtract, multiply, or divide two numbers and display the result.</p>
+                        <div class="project-links">
+                            <a href="https://rachaelwest.github.io/simple-calculator/" target="_blank">View Live</a><br>
+                            <a href="https://github.com/RachaelWest/simple-calculator" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </article>         
+            </div>
         </section>
-        
+    </main>
        
-    </body>
+</body>
 </html>
